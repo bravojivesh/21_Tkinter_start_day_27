@@ -8,15 +8,15 @@ window1=tk.Tk()
 # bg_image = tk.PhotoImage(file="Biggie- pink glases and hat.png")
 
 window1.title("Title here for Jose")
-window1.minsize(width=500, height=500)
+window1.minsize(width=700, height=700)
 
 
 # label1=tk.Label(text=jh_text, font=("Arial",23,"bold"), image=bg_image)
-label1=tk.Label(text=jh_text, font=("Arial",23,"bold"))
-label1.pack()
+label1=tk.Label(text=jh_text, font=("Arial",10,"bold"))
+label1.grid(column=0, row=0)
 
 ask=tk.Entry()
-ask.pack()
+ask.grid(column=7, row=4)
 
 def button_click():
     ask_store = ask.get() #this has to be inside the function, to grab the input. If outside, it will run but since nothing
@@ -26,8 +26,11 @@ def button_click():
     label1["foreground"]="Purple"
 
 
-button1=tk.Button(fg="Blue", width=20,text="What's gucci?",font=("Helvetica", 22),command=button_click)
-button1.pack()
+button1=tk.Button(fg="Blue", width=10,text="What's gucci?",font=("Helvetica", 10),command=button_click)
+button1.grid(column=1, row=1)
+
+button2=tk.Button(fg="Blue", width=10,text="What's gucci?",font=("Helvetica", 10),command=button_click)
+button2.grid(column=4, row=0)
 
 
 
