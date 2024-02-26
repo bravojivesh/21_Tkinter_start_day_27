@@ -1,0 +1,10 @@
+#==============================================================================
+#JH: MY WAY, it is working up to this point, but I do not learn anything new :) So, I will use the .after() function.
+    # while total_time>=0:
+    #     # print(total_time)
+    #     canvas1.itemconfig(timer_digits,text=total_time)
+    #     canvas1.update_idletasks() #without this the screen does not update.
+    #     # It directly shows the last value, which is 0
+    #     time.sleep(1)
+    #     total_time -= 1
+#==============================================================================
